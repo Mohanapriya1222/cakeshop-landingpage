@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakeshop web design</title>
+
+
+ <!-- font awsome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+<!--custom css file--> 
+    <link rel="stylesheet" href="cake.css">
+
+    <style>
+        #login-modal{
+            position:fixed;
+            top:0;left:0;right:0;bottom:0;
+            background:rgba(0,0,0,.6);
+            display:none;
+            align-items:center;
+            justify-content:center;
+            z-index:2000;}
+        #login-modal.active{
+            display:flex;}
+        #login-modal .login-box{
+            background:#fff;
+            padding:3rem;
+            border-radius:.5rem;
+            width:35rem;
+            text-align:center;}
+        #login-modal .login-box input{
+            width:100%;
+            padding:1rem;
+            margin:.8rem 0;
+            border:.1rem solid #ccc;
+            border-radius:.5rem;
+            font-size:1.6rem;}
+    </style>
+
+</head>
+<body>
+
+ <!--header section starts here-->
+
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        
+        <a href="#" class="logo" >Bunny's Oven<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+       <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user" id="login-btn"></a>
+            <a href="#" id="logout-btn" style="display:none; font-size:1.7rem;">Logout</a>
+        </div>
+
+    </header>
+     
+    <!--header section ends here-->
+    
+    <!--home section start here-->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>fresh cakes</h3>
+            <span>healthy and tasty cakes </span>
+            <p>Welcome to our cake shop, where every bite is a blend of taste, freshness, and happiness. We believe that cakes are not just desserts but a way to celebrate life’s sweetest moments.
+                That’s why we focus on delivering quality and flavor at prices everyone can enjoy.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </section>
+
+
+<!--homesection ends-->
+
+<!--abt sec start -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> about </span> us </h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="images/video1.mp4" loop autoplay muted></video>
+            <h3>best cake sellers</h3>
+        </div>
+
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p> Our mission is simple: to bring joy to our customers through cakes that combine flavor, affordability, and artistry. Every slice reflects our passion for baking and our commitment to making life’s moments sweeter.</p> 
+        <a href="#" class="btn">learn more</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--abt sec ends-->
+
+<!--icons section starts -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <img src="images/4947265.png" alt="">
+        <div class="info">
+            <h3>free delivery</h3>
+            <span> on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/9923675.png" alt="">
+        <div class="info">
+            <h3>returns available only for certain reason</h3>
+            <span>money back garentee </span>
+        </div>
+    </div>
+
+        <div class="icons">
+        <img src="images/2429317.png" alt="">
+        <div class="info">
+            <h3>offer & gifts</h3>
+            <span>Sweet Deals </span>
+        </div>
+    </div>
+
+        <div class="icons">
+        <img src="images/6993594.png" alt="">
+        <div class="info">
+            <h3>secure payments</h3>
+            <span>protected by paypal</span>
+        </div>
+    </div>
+
+</section>
+
+<!--icons section end -->
+
+<!--product section start-->
+
+<section class="products" id="products">
+ 
+    <h1 class="heading">latest<span>products</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="image">
+                <img src="images/blueberry.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>blueberry cake</h3>
+                <div class="price">$150 <span>$200</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="images/almond.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>almond cake</h3>
+                <div class="price">$180 <span>$220</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-30%</span>
+            <div class="image">
+                <img src="images/strawberry.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>strawberry cake</h3>
+                <div class="price">$300 <span>$320</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-30%</span>
+            <div class="image">
+                <img src="images/chocolate.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>chocolate cake</h3>
+                <div class="price">$250 <span>$270</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-30%</span>
+            <div class="image">
+                <img src="images/pinkcake.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>strawberry cake</h3>
+                <div class="price">$200 <span>$210</span></div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+<!--product section end only 5-->
+
+
+<!--review section-->
+
+<section class="review" id="review">
+
+    <h1 class="heading">customer's <span>review</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>this website is very usefull for ordering cakes</p>
+            <div class="user">
+                <img src="images/customer (1).jpg" alt="">
+                <div class="user-info">
+                    <h3>kitty</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>this website is very usefull for ordering cakes</p>
+            <div class="user">
+                <img src="images/customer.jpg" alt="">
+                <div class="user-info">
+                    <h3>masha </h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+    </div>
+</section>
+<!--review ends-->
+
+<!--contact section-->
+<section class="contact " id="contact">
+<h3 class="heading"><span>contact</span>us</h3>
+<div class="row">
+    <form action="">
+        <input type="text" placeholder="name" class="box">
+         <input type="email" placeholder="email" class="box">
+          <input type="number" placeholder="number" class="box">
+            <input type="feedback" placeholder="feedback" class="box">
+          <input type="submit" value="send" class="btn">
+    </form>
+<div class="image">
+    <img src="images/cake_shop.jpg">
+</div>
+
+</div>
+</section>
+        <div style="text-align:center; padding:2rem; background:#fff; font-size:1.6rem;">
+        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+        <p><i class="fas fa-envelope"></i> bunnysoven@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Chennai, TN</p>
+        </div>  
+</body>
+
+<div id="login-modal">
+    <div class="login-box">
+        <h3 style="font-size:2.5rem; margin-bottom:1rem;">Login</h3>
+        <input type="text" placeholder="email">
+        <input type="password" placeholder="password">
+        <button class="btn" onclick="doLogin()">Login</button>
+        <button class="btn" style="background:#666;" onclick="closeLogin()">Close</button>
+    </div>
+</div>
+
+<script>
+let loginBtn=document.getElementById("login-btn");
+let logoutBtn=document.getElementById("logout-btn");
+let modal=document.getElementById("login-modal");
+function checkLogin(){
+ if(localStorage.getItem("loggedIn")=="true"){
+  loginBtn.style.display="none"; logoutBtn.style.display="inline-block";
+ }else{
+  loginBtn.style.display="inline-block"; logoutBtn.style.display="none";
+ }
+}
+checkLogin();
+loginBtn.onclick=(e)=>{e.preventDefault(); modal.classList.add("active");}
+function closeLogin(){modal.classList.remove("active");}
+function doLogin(){localStorage.setItem("loggedIn","true");modal.classList.remove("active");alert("Login Success!");checkLogin();}
+logoutBtn.onclick=(e)=>{e.preventDefault();localStorage.removeItem("loggedIn");alert("Logged out");checkLogin();}
+</script>
+</html>
