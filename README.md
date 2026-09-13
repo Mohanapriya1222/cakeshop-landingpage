@@ -1,14 +1,23 @@
-# Cake Shop Website
+# 🍰Cake Shop Website
+🔗live link: https://mohanapriya1222.github.io/bunnyscakeshop/
+A modern and responsive landing page for a cake shop, designed as a portfolio project.
 
-A responsive cake shop website built with HTML, CSS and JavaScript.
+## Overview
+This is a clean and attractive landing page built to showcase a cake shop brand.
+Focused on modern UI, smooth layout and mobile responsiveness.
 
 ## Features
-- Fully responsive design
+- responsive design
 - Home, About, Products, Review, Contact sections
 - Product cards with pricing and discounts
 - Customer reviews
 - Login and logout functionality
-- Contact form
+- Contact section
+
+## What I Learned / Implemented
+- UI/UX design
+- Product showcase layout
+- Clean code structure
 
 ## Project Structure
 - index.html - Main HTML file
