@@ -1,5 +1,5 @@
 # 🍰Cake Shop Website
-🔗live link: https://mohanapriya1222.github.io/bunnyscakeshop/
+🔗live link:https://mohanapriya1222.github.io/cakeshop-landingpage/
 A modern and responsive landing page for a cake shop, designed as a portfolio project.
 
 ## Overview
